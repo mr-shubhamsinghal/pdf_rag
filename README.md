@@ -15,3 +15,21 @@ This project implements a RAG pipeline that:
 # protocol analysis, and traffic monitoring capabilities..."```
 
 The system combines the power of vector similarity search with LLM capabilities to provide contextually relevant and accurate responses based on your document collection.
+
+# To run this project
+
+- docker compose -f docker-compose.yml up
+- uv run main.py
+
+# For first time, uncomment this code -
+
+```python
+vector_store = QdrantVectorStore.from_documents(
+    documents=[],
+    collection_name="sniffer",
+    url=os.getenv('VECTOR_DB_URL'),
+    embedding=embeddings
+)
+
+vector_store.add_documents(documents=split_docs)
+```
