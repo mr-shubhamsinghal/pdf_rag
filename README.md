@@ -12,7 +12,7 @@ This project implements a RAG pipeline that:
 # Query the systemquery = "What are the key features of Sniffer?"
 # System retrieves relevant document chunks from the vector store
 # Then generates a response based on the retrieved context# Output: "Sniffer is a network analysis tool that offers packet capture, 
-# protocol analysis, and traffic monitoring capabilities..."```
+# protocol analysis, and traffic monitoring capabilities..."
 
 The system combines the power of vector similarity search with LLM capabilities to provide contextually relevant and accurate responses based on your document collection.
 
@@ -23,7 +23,6 @@ The system combines the power of vector similarity search with LLM capabilities 
 
 # For first time, uncomment this code -
 
-```python
 vector_store = QdrantVectorStore.from_documents(
     documents=[],
     collection_name="sniffer",
