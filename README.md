@@ -1,4 +1,4 @@
-# GenAI RAG Cohort
+# PDF RAG
 A Retrieval-Augmented Generation (RAG) system that enhances LLM responses with relevant context from documents.
 
 ## Overview
